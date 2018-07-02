@@ -19,11 +19,33 @@ export class AddUserComponent {
   listOfRoles: any;
 
 
-  ngOnInit() {
-    alert("Add user component called...");
-    // this.listOfRoles = this.route.snapshot.data.listOfRoles.data;
-    // this.userdata.Role = this.listOfRoles[0]._id;
+  // ngOnInit() {
+  //   console.log("Add user component called...");
+  //   alert("Add user component called...");
+  //   // this.listOfRoles = this.route.snapshot.data.listOfRoles.data;
+  //   // this.userdata.Role = this.listOfRoles[0]._id;
+  //
+  //
+  //
+  // }
+
+  ngOnInit(): void {
+    // this.heroForm = new FormGroup({
+    //   'name': new FormControl(this.hero.name, [
+    //     Validators.required,
+    //     Validators.minLength(4),
+    //     forbiddenNameValidator(/bob/i) // <-- Here's how you pass in the custom validator.
+    //   ]),
+    //   'alterEgo': new FormControl(this.hero.alterEgo),
+    //   'power': new FormControl(this.hero.power, Validators.required)
+    // });
+    //
   }
+
+  get name() { return this.heroForm.get('name'); }
+
+  get power() { return this.heroForm.get('power'); }
+
 
   AddUser(userForm) {
     if (userForm.form.valid) {

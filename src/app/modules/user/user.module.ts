@@ -22,8 +22,8 @@ let routes = [
   {
     path: 'list',
     component: UserListComponent,
-    data: {apiPath: '/api/user'},
-    resolve: {users: DataResolve}
+    // data: {apiPath: '/api/user'},
+    // resolve: {users: DataResolve}
   },
   {
     path: 'add',
