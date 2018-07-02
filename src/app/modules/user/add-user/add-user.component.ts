@@ -42,9 +42,9 @@ export class AddUserComponent {
     //
   }
 
-  get name() { return this.heroForm.get('name'); }
+  // get name() { return this.heroForm.get('name'); }
 
-  get power() { return this.heroForm.get('power'); }
+  // get power() { return this.heroForm.get('power'); }
 
 
   AddUser(userForm) {

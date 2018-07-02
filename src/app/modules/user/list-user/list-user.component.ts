@@ -12,6 +12,7 @@ import {NotificationService} from '../../../@shared/services/notification.servic
 })
 export class UserListComponent {
 
+  myOptions : any = " world";
 
   constructor(private userService: UserService,
               private router: Router,
@@ -20,7 +21,7 @@ export class UserListComponent {
   }
 
   ngOnInit() {
-    console.log('===>>>', this.route.snapshot.data['users'].Data.data);
+    // console.log('===>>>', this.route.snapshot.data['users'].Data.data);
   }
 
 

@@ -11,6 +11,7 @@ import {AppComponent} from './app.component';
 import {HomeComponent} from './modules/home/home.component';
 import {UserModule} from './modules/user/user.module';
 import {AddUserComponent} from './modules/user/add-user/add-user.component';
+import {MyComponent} from './@shared/my-dir';
 // import {HomeComponent} from './home/home.component';
 // import {PagerService} from '../@shared/services';
 // import {CommonDataService} from '../@shared/services/commondata.service';
@@ -20,7 +21,6 @@ import {AddUserComponent} from './modules/user/add-user/add-user.component';
 // import {GridComponent} from '../@shared/components/grid.component';
 // import {NotificationService} from '../@shared/services/notification.service';
 // import {DataService} from '../@shared/services/data.service';
-
 let routes: Routes = [
   // {
     // path: 'login',
@@ -71,6 +71,8 @@ let routes: Routes = [
 })
 export class AppRoutingModule {
 
-
+  // static COMPONENTS = [
+  //   MyComponent,
+  // ];
 
 }

@@ -37,7 +37,7 @@ let routes = [
 
 
 @NgModule({
-  declarations: [AddUserComponent, UserEditComponent, UserListComponent],
+  declarations: [AddUserComponent, UserEditComponent, UserListComponent,...SharedModule.COMPONENTS],
   imports: [BrowserModule, HttpClientModule, RouterModule.forChild(routes), FormsModule, CommonModule],
   exports: [AddUserComponent, UserEditComponent, UserListComponent],
   providers: [UserService, GetUserResolve, ...SharedModule.PROVIDERS/*,GetRolesListResolve, CheckAuth*/]

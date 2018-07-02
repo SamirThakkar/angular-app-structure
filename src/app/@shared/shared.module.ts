@@ -1,6 +1,7 @@
 import { DataService } from './services/data.service';
 import {NotificationService} from './services/notification.service';
 import {DataResolve} from './services/data.resolve';
+import {MyComponent} from './my-dir';
 
 
 export class SharedModule {
@@ -10,5 +11,7 @@ export class SharedModule {
     NotificationService
   ];
 
-
+  static COMPONENTS = [
+    MyComponent
+  ];
 }
