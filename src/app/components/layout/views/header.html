@@ -1,0 +1,141 @@
+<div id="navigation">
+  <div class="container-fluid">
+    <a routerLink="/dashboard" id="brand">Big Commerce</a>
+    <a href="#" class="toggle-nav" rel="tooltip" data-placement="bottom" title="" data-original-title="Toggle navigation">
+      <i class="fa fa-bars"></i>
+    </a>
+    <ul class="main-nav">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active">
+          <span>Home</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <span ensure-authorized="PRODUCT_AD_CANADD">Product Ads</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/product-ad/add">Add</a>
+          </li>
+          <li>
+            <a routerLink="/product-ad/list">List</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <span>Users</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/user/add">Add</a>
+          </li>
+          <li>
+            <a routerLink="/user/list">List</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <span>Favourite Item</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+
+          <li>
+            <a routerLink="/favourite-item/list">List</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <span>Store</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/store/add">Add</a>
+          </li>
+          <li>
+            <a routerLink="/store/list">List</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+          <span>Role</span>
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li>
+            <a routerLink="/role/add">Add</a>
+          </li>
+          <li>
+            <a routerLink="/role/list">List</a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <div class="user">
+      <!--Color Start-->
+      <ul class="icon-nav">
+        <li class='dropdown colo'>
+          <a href="#" class='dropdown-toggle' data-toggle="dropdown">
+            <i class="fa fa-tint"></i>
+          </a>
+          <ul class="dropdown-menu pull-right theme-colors">
+            <li class="subtitle">
+              Predefined colors
+            </li>
+            <li>
+              <span class='red' (click)="setProjectTheme($event)"></span>
+              <span class='orange' (click)="setProjectTheme($event)"></span>
+              <span class='green' (click)="setProjectTheme($event)"></span>
+              <span class="brown" (click)="setProjectTheme($event)"></span>
+              <span class="blue" (click)="setProjectTheme($event)"></span>
+              <span class='lime' (click)="setProjectTheme($event)"></span>
+              <span class="teal" (click)="setProjectTheme($event)"></span>
+              <span class="purple" (click)="setProjectTheme($event)"></span>
+              <span class="pink" (click)="setProjectTheme($event)"></span>
+              <span class="magenta" (click)="setProjectTheme($event)"></span>
+              <span class="grey" (click)="setProjectTheme($event)"></span>
+              <span class="darkblue" (click)="setProjectTheme($event)"></span>
+              <span class="lightred" (click)="setProjectTheme($event)"></span>
+              <span class="lightgrey" (click)="setProjectTheme($event)"></span>
+              <span class="satblue" (click)="setProjectTheme($event)"></span>
+              <span class="satgreen" (click)="setProjectTheme($event)"></span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <!--Color End-->
+
+      <div class="dropdown">
+        <a class='dropdown-toggle' data-toggle="dropdown">Hi, {{username}}
+          <img id="image" src="./assets/img/profile-logo.png" height="27" width="27" alt="No Image">
+        </a>
+        <ul class="dropdown-menu pull-right">
+          <li>
+            <a routerLink="/profile/edit">
+              <i class="glyphicon glyphicon-user"></i>
+              Profile</a>
+          </li>
+          <li>
+            <a routerLink="/profile/change-password">
+              <i class="glyphicon glyphicon-lock"></i>
+              Change Password</a>
+          </li>
+          <li>
+            <a routerLink="/login" (click)="logOut($event)">
+              <i class="glyphicon glyphicon-log-out"></i>
+              Sign out</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

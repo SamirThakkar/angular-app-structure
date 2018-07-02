@@ -1,17 +1,20 @@
 import {Injectable} from '@angular/core';
-import {Http} from '@angular/http';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/take';
+import {HttpClient} from '@angular/common/http';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/take';
+// import 'rxjs/add/operator/take';
+// import 'rxjs/add/operator/concatMap';
+// import 'rxjs/add/operator/switchMap';
+
 import {User} from './user';
 import {ActivatedRouteSnapshot, Resolve} from '@angular/router';
 import {DataService} from '../../../@shared/services/data.service';
 
-// import {RoHttp} from "../../../_services/ro-http.service";
 
 @Injectable()
 export class UserService {
-  constructor(private http: Http,
+  constructor(private http: HttpClient,
               private dataService: DataService) {
   }
 

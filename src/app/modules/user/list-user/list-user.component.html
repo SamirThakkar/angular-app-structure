@@ -1,0 +1,22 @@
+<nav class="breadcrumb">
+  <a class="breadcrumb-item" routerLink="/dashboard">Home</a>
+  <i class="fa fa-angle-right"></i>
+  <a class="breadcrumb-item" routerLink="/user/list">Users</a>
+  <i class="fa fa-angle-right"></i>
+  <span class="breadcrumb-item active">List User</span>
+</nav>
+
+<div class="box">
+  <div class="box-title">
+    <h3>
+      <i class="fa fa-plus"></i>
+      List User
+    </h3>
+  </div>
+</div>
+
+<!--<crud-page-header [options]="pageHeaderOptions"></crud-page-header>-->
+<!--<app-grid [options]="gridOptions"></app-grid>-->
+
+<button (click)="getData()">Get Selected Rows</button>
+

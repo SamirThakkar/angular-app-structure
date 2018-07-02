@@ -2,7 +2,6 @@ import {Component} from '@angular/core';
 import {User} from '../shared/user';
 import {ActivatedRoute, Router} from '@angular/router';
 import {UserService} from '../shared/user.service';
-import {CommonService} from '../../../@shared/services/common.service';
 
 @Component({
   selector: 'user-add',
@@ -12,7 +11,6 @@ import {CommonService} from '../../../@shared/services/common.service';
 
 export class AddUserComponent {
   constructor(private userService: UserService,
-              private commonService: CommonService,
               private router: Router,
               private route: ActivatedRoute) {
   }
@@ -22,6 +20,7 @@ export class AddUserComponent {
 
 
   ngOnInit() {
+    alert("Add user component called...");
     // this.listOfRoles = this.route.snapshot.data.listOfRoles.data;
     // this.userdata.Role = this.listOfRoles[0]._id;
   }
@@ -31,13 +30,11 @@ export class AddUserComponent {
       this.userService.addUserService(this.userdata).then(res => {
         console.log(res);
         if (res == 'User already exists') {
-          // message = this.commonService.getMessage('user.existsuser');
-          // this.commonService.setMessage(message, 'error');
+
           this.router.navigate(['user/add']);
         }
         else {
-          // message = this.commonService.getMessage('user.addsuccess');
-          // this.commonService.setMessage(message, 'success');
+
           this.router.navigate(['user/list']);
         }
       });

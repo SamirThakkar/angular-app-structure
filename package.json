@@ -21,8 +21,10 @@
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
     "core-js": "^2.5.4",
+    "noty": "^3.2.0-beta",
     "rxjs": "^6.0.0",
-    "zone.js": "^0.8.26"
+    "zone.js": "^0.8.26",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^6.0.3",
@@ -43,6 +45,8 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.3.0",
     "ts-node": "~5.0.1",
-    "tslint": "~5.9.1"
+    "tslint": "~5.9.1",
+    "jquery": "^3.3.1",
+    "bootstrap": "3.3.7"
   }
 }

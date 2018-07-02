@@ -37,3 +37,15 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+
+.idea/
+.git/
+node_modules/
+client/**/*.js
+client/**/*.js.map
+*.js.map
+src/app/**/*.js
+src/app/**/*.js.map
+
+src/app/**/*.map
